@@ -1,4 +1,5 @@
 import React from "react";
+import icons from "react-icons";
 
 const BannerPic = ({ img }) => {
   const bgImage = {
