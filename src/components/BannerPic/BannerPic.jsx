@@ -1,5 +1,4 @@
 import React from "react";
-import { MdGrade } from 'react-icons/md';
 
 const BannerPic = ({ img }) => {
   const bgImage = {
