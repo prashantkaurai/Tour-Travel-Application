@@ -88,10 +88,7 @@ const Navbar = ({ handleOrderPopup }) => {
                   </NavLink>
                 </li>
                 <li className="group relative cursor-pointer">
-                  <a
-                    href="/#home"
-                    className="flex h-[72px] items-center gap-[2px]"
-                  >
+                  <a href="/#home" className="flex h-[72px] items-center gap-[2px]">
                     Quick Links{" "}
                     <span>
                       <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
@@ -101,10 +98,7 @@ const Navbar = ({ handleOrderPopup }) => {
                     <ul className="space-y-3">
                       {DropdownLinks.map((data) => (
                         <li key={data.name}>
-                          <a
-                            className="inline-block w-full rounded-md p-2 hover:bg-primary/20"
-                            href={data.link}
-                          >
+                          <a className="inline-block w-full rounded-md p-2 hover:bg-primary/20" href={data.link}>
                             {data.name}
                           </a>
                         </li>
@@ -115,28 +109,16 @@ const Navbar = ({ handleOrderPopup }) => {
               </ul>
             </div>
             <div className="flex items-center gap-4">
-              <button
-                className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1 rounded-full"
-                onClick={() => {
-                  handleOrderPopup();
-                }}
-              >
+              <button className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1 rounded-full"
+                onClick={() => { handleOrderPopup(); }} >
                 Book Now
               </button>
               {/* Mobile Hamburger icon */}
               <div className="md:hidden block">
                 {showMenu ? (
-                  <HiMenuAlt1
-                    onClick={toggleMenu}
-                    className=" cursor-pointer transition-all"
-                    size={30}
-                  />
+                  <HiMenuAlt1 onClick={toggleMenu} className=" cursor-pointer transition-all" size={30} />
                 ) : (
-                  <HiMenuAlt3
-                    onClick={toggleMenu}
-                    className="cursor-pointer transition-all"
-                    size={30}
-                  />
+                  <HiMenuAlt3 onClick={toggleMenu} className="cursor-pointer transition-all" size={30} />
                 )}
               </div>
             </div>
