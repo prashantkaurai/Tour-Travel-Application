@@ -73,8 +73,7 @@ const Places = ({ handleOrderPopup }) => {
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {PlacesData.map((item, index) => (
-              <PlaceCard
-                handleOrderPopup={handleOrderPopup}
+              <PlaceCard handleOrderPopup={handleOrderPopup}
                 key={index}
                 {...item}
               />
